@@ -10,9 +10,8 @@ void print_opt_parens(int **s, int i, int j, char& name);
 
 int main() {
 	
-	//cout << "Test" << endl;
 
-	cout << "Sample Input 1: ";
+	cout << "\nSample Input 1: ";
 	int testArr[] = { 10, 20, 30, 40, 30 };
 	const int arrSize = sizeof(testArr) / sizeof(int);
 	matrix_chain_order(testArr, arrSize);
