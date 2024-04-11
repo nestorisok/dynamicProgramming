@@ -68,12 +68,12 @@ int matrix_chain_order(int p[], int n) {
 
 
 	char name = 'A';
-	print_opt_parens(s, 1, n, name);
-	cout << "\nOptimal Cost is: " << m[1][n-1];
+	print_opt_parens(s, 1, n-1, name); // we need n - 1 because we aren't using the final collumn/first row
+	cout << "\nOptimal Cost is: " << m[1][n - 1]; // same issue here
 
 
-	//delete m;
-	//delete s;
+	delete[] m[n]; //reallocating memory
+	delete[] s[n - 1];
 	return 0;
 }
 
